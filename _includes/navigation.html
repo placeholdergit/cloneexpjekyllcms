@@ -1,0 +1,11 @@
+<nav>
+  <div class="pad-sides flex-container">
+    {% for item in site.data.navigation %}
+      <div class="flex-nav">
+        <a href="{{ item.link }}">
+          {{ item.name }}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</nav>
