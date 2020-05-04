@@ -1,0 +1,20 @@
+---
+layout: default
+title: Home
+---
+
+<p>Say something here about what your blog is about.</p>
+
+<p>How it is different from other websites in its category.</p>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
