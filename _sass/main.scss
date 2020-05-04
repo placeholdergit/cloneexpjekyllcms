@@ -6,6 +6,9 @@ $bodyFont: 'Lato', sans-serif;
 * {
   box-sizing: border-box;
 }
+body, html {
+  font-size: 18px;
+}
 body {
   background: $backgroundColor;
   color: $bodyColor;
@@ -79,9 +82,9 @@ ul {
 .header {
   grid-column: 1 / -1;
 }
-.main {
-  font-size: 1.2rem;
-}
+// .main {
+//   font-size: 1.2rem;
+// }
 .main, .post-list {
   // background-color: #fff;
   grid-column: 2 / -2;
