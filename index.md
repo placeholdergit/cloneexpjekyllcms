@@ -1,6 +1,8 @@
 ---
 layout: default
-title: "My Awesome Jekyll Blog"
+title: Home
 ---
 
-Start developing your Jekyll website.
+Say something here about what your blog is about. 
+
+How it is different from other websites in its category.
