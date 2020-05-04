@@ -12,19 +12,19 @@
       <div class="nav-bar">
         {% include navigation.html %}
       </div>
-      {% if page.title == 'Home'%}
+      {% if page.title == 'Home' or page.title == 'Blog' %}
         {% include header.html %}
       {% endif %}
       <div class="main">
         {{ content }}
       </div>
       
-      {% unless page.layout == 'post' or page.title == 'About' %}
+      {% if page.title == 'Home' %}
       <div class="post-list">
         <hr>
         {% include posts.html %}
       </div>
-      {% endunless %}
+      {% endif %}
       
     </div>
   </body>
