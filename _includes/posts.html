@@ -1,12 +1,14 @@
-<div>
+<div class="flex-container">
   {% if page.title == 'Home' %}
-    {% assign x = 2 %}
+    {% assign x = 3 %}
   {% else }
     {% assign x = 100 %}
   {% endif %}
   {% for post in site.posts limit:x %}
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.date | date_to_string }}
-    {{ post.excerpt }}
+    <div class="card">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.date | date_to_string }}
+      {{ post.excerpt }}
+    </div>  
   {% endfor %}
 </div>
