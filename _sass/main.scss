@@ -106,9 +106,17 @@ ul {
 // }
 .main, .post-list {
   // background-color: #fff;
-  grid-column: 2 / -2;
-  padding: 1rem;
+  grid-column: 1 / -1;
+  padding: 0.5em;
   max-width: 100vw;
+}
+@media (min-width: 500px) {
+  .main, .post-list {
+    // background-color: #fff;
+    grid-column: 2 / -2;
+    padding: 1em;
+    max-width: 100vw;
+  }
 }
 .nav-bar {
   grid-column: 1 / -1;
