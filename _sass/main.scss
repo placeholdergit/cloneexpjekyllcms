@@ -49,7 +49,7 @@ ul {
   list-style-type: none;
 }
 .bg-img-home {
-  // width: 100%;
+  width: 100%;
   height: 20rem;
   background-position: center;
   padding-top: 2.8rem;
@@ -58,7 +58,7 @@ ul {
   background-image: url('../images/LabuanBajo.jpg');
 }
 .bg-img-blog {
-  // width: 100%;
+  width: 100%;
   height: 18rem;
   background-position: center;
   // padding-top: 2.8rem;
@@ -71,7 +71,7 @@ ul {
   flex-wrap: wrap;
 }
 .flex-nav {
-  flex: 0 1 10%;
+  flex: 0 1 6em;
 }
 .grid-container {
   display: grid;
