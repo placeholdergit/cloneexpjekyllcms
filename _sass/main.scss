@@ -23,11 +23,11 @@ a {
 a:link, a:visited {
   color: inherit;
 }
-a:hover, a.show-like-hover {
+a:hover {
   color: #4424D6;
   border-bottom: solid 3px #4424D6;
 }
-a:hover.nav-link {
+a:hover.card {
   border-bottom: none;
 }
 a:active {
@@ -127,9 +127,6 @@ ul {
 }
 .nav-bar {
   grid-column: 1 / -1;
-}
-.nav-link {
-  padding: 0 2em;
 }
 .pad-sides {
   padding-right: 2rem;

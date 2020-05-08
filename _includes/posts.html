@@ -5,9 +5,9 @@
   {% assign x = 100 %}
 {% endif %}
 {% for post in site.posts limit:x %}
-  <div class="card">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <a href="{{ post.url }}" class="card">
+    <h2>{{ post.title }}</h2>
     {{ post.date | date_to_string }}
     {{ post.excerpt }}
-  </div>  
+  </a>
 {% endfor %}
