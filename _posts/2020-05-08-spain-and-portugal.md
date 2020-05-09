@@ -3,7 +3,7 @@ layout: post
 title: Spain and Portugal
 date: 2020-05-08T23:52:56.496Z
 ---
-![Plaza de España](assets/uploads/Plaza_de_Espana_small.jpg)
+![Plaza de España](assets/uploads/plaza_de_espana_small.jpg)
 
 In the spring of 2016 we toured Andalucía and southern Portugal.
 
