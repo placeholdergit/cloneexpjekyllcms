@@ -5,7 +5,7 @@ date: 2020-05-08T23:52:56.496Z
 ---
 ![Plaza de España](assets/uploads/Plaza_de_Espana_small.jpg)
 
-In the spring of 2016 we toured Andaluciía and southern Portugal.
+In the spring of 2016 we toured Andalucía and southern Portugal.
 
 <!--more-->
 
