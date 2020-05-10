@@ -20,11 +20,13 @@
       <div class="main">
         {{ content }}
       </div>
-      
       {% if page.title == 'Home' or page.title == 'Blog' %}
-      <div class="post-list">
-        {% include posts.html %}
-      </div>
+        <div class="post-list">
+          {% include posts.html %}
+        </div>
+      {% endif %}
+    </div>
+    {% if page.title == 'Home' %}
       <script>
         if (window.netlifyIdentity) {
           window.netlifyIdentity.on("init", user => {
@@ -36,8 +38,6 @@
           });
         }
       </script>
-      {% endif %}
-      
-    </div>
+    {% endif %}
   </body>
 </html>
