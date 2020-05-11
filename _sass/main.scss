@@ -67,8 +67,14 @@ nav {
 //   list-style-type: none;
 // }
 
-// From w3.css .w3-animate-top
-.animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+// From w3.css .w3-animate-opacity
+.animate-opacity {
+  position: relative;
+  animation: opac 1.2s;
+}
+@keyframes opac {
+  from{opacity: 0} to {opacity: 1};
+}
 .bg-img-home {
   // width: 100%;
   // max-width: 100vw;

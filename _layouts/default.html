@@ -32,10 +32,10 @@
       function reverseNavColors() {
           var navbar = document.getElementsByTagName("nav")[0];
           if (document.body.scrollTop > 240 || document.documentElement.scrollTop > 240) {
-              navbar.className = "reverse-colors" + " animate-top";
+              navbar.className = "reverse-colors" + " animate-opacity";
           }
           else {
-              navbar.className = navbar.className.replace("reverse-colors animate-top", "");
+              navbar.className = navbar.className.replace("reverse-colors animate-opacity", "");
           }
       }
     </script>
