@@ -30,6 +30,10 @@ a:hover {
   color: #391eb4; // #4424D6;
   border-bottom: solid 3px #391eb4; // #4424D6;
 }
+nav.reverse-colors a:hover {
+  color: inherit;
+  border-bottom: solid 3px #ffffff;
+}
 a.card {
   max-width: 90vw;
 }
@@ -62,12 +66,15 @@ nav {
 // ul {
 //   list-style-type: none;
 // }
+
+// From w3.css .w3-animate-top
+.animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
 .bg-img-home {
   // width: 100%;
   // max-width: 100vw;
   height: 20em;
   background-position: center;
-  padding-top: 2.8rem;
+  // padding-top: 2.8rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../images/LabuanBajo.jpg');
@@ -159,6 +166,10 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end; // stretch;
+}
+.reverse-colors {
+  color: #ffffff;
+  background-color: #391eb4;
 }
 .sticky-top {
   top: 0;

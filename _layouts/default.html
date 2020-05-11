@@ -26,6 +26,19 @@
         </div>
       {% endif %}
     </div>
+    <script>
+      // Change style of navbar on scroll
+      window.onscroll = function() {reverseNavColors()};
+      function reverseNavColors() {
+          var navbar = document.getElementsByTagName("nav")[0];
+          if (document.body.scrollTop > 240 || document.documentElement.scrollTop > 240) {
+              navbar.className = "reverse-colors" + " animate-top";
+          }
+          else {
+              navbar.className = navbar.className.replace("reverse-colors animate-top", "");
+          }
+      }
+    </script>
     {% if page.title == 'Home' %}
       <script>
         if (window.netlifyIdentity) {
