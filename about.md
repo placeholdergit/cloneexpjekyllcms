@@ -2,6 +2,8 @@
 title: About
 layout: default
 ---
+![Me](/assets/uploads/me_small.jpg)
+
 # About Me
 
 This page tells you a little bit about me.
