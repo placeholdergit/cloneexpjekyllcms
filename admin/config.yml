@@ -26,6 +26,7 @@ collections:
           # valueField: 'name',
         # }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Tags', name: 'tags', widget: 'list'}
   # - name: 'authors'
     # label: 'Authors'
     # folder: '_authors/'
