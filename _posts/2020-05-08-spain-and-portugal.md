@@ -2,6 +2,10 @@
 layout: post
 title: Spain and Portugal
 date: 2020-05-08T23:52:56.496Z
+tags:
+  - Spain
+  - Portugal
+  - Europe
 ---
 ![Plaza de España](/assets/uploads/plaza_de_espana_small.jpg)
 <!--more-->
