@@ -62,6 +62,10 @@ a:active {
 // div.card img {
 //   max-width: 90vw;
 // }
+hr {
+  color: $backgroundColor;
+  border-top: 4px solid $Bright-red-1;
+}
 nav {
   font-size: 1.1em;
   // background-color: #B2D732;
