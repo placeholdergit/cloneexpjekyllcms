@@ -1,6 +1,6 @@
 
 @import "colors";
-$theme-name: $theme-1;
+$theme-name: $theme-3;
 
 // $backgroundColor: #ffffff;
 $bodyColor: #000000;
@@ -13,7 +13,7 @@ body, html {
   font-size: 18px;
 }
 body {
-  background-color: map-get($theme-name, "color-5");
+  background-color: lighten(map-get($theme-name, "color-5"), 40%);
   color: $bodyColor;
   // font-family: $bodyFont;
   font-family: 'Open Sans', sans-serif;
@@ -21,7 +21,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
-  color: map-get($theme-name, "color-4");
+  color: darken(map-get($theme-name, "color-4"), 20%);
 }
 a {
   text-decoration: none;
