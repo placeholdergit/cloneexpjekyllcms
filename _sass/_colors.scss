@@ -21,8 +21,8 @@ $theme-3: (
   "color-1": #222559,  // Very dark blue-1
   "color-2": #4e52a6,  // Dark moderate blue-2
   "color-3": #175073,  // Dark blue-3
-  "color-4": #609bbf,  // Slightly desaturated blue-4
-  "color-5": #6cd9d9,  // Soft cyan-5
+  "color-4": darken(#609bbf, 20%),  // Slightly desaturated blue-4
+  "color-5": lighten(#6cd9d9, 40%),  // Soft cyan-5
 );
 
 /* Camping-in-the-mountains-under */

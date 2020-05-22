@@ -13,7 +13,7 @@ body, html {
   font-size: 18px;
 }
 body {
-  background-color: lighten(map-get($theme-name, "color-5"), 40%);
+  background-color: map-get($theme-name, "color-5");
   color: $bodyColor;
   // font-family: $bodyFont;
   font-family: 'Open Sans', sans-serif;
@@ -21,7 +21,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
-  color: darken(map-get($theme-name, "color-4"), 20%);
+  color: map-get($theme-name, "color-4");
 }
 a {
   text-decoration: none;
