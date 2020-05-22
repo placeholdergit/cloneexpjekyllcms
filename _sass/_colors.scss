@@ -30,8 +30,8 @@ $theme-4: (
   "color-1": #131a40,  // Very dark blue-1
   "color-2": #355b8c,  // Dark moderate blue-2
   "color-3": #081826,  // Very dark (mostly black) blue-3
-  "color-4": #17aebf,  // Strong cyan-4
-  "color-5": #30f2f2,  // Bright cyan-5
+  "color-4": darken(#17aebf, 15%),  // Strong cyan-4
+  "color-5": lighten(#30f2f2, 45%),  // Bright cyan-5
 );
 
 /* Road-into-the-red-rock-desert- */
