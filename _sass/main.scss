@@ -5,7 +5,7 @@ $theme-name: $theme-8;
 /***********
 *  COLORS  *
 ************/
-$bodyBackground: darken(map-get($theme-name, "color-3"), 5%);
+$bodyBackground: map-get($theme-name, "color-3");
 $bodyColor: #000000;
 $headerHeadingColor: map-get($theme-name, "color-1");
 $headingsColor: map-get($theme-name, "color-5");
@@ -13,7 +13,7 @@ $linkColor: map-get($theme-name, "color-3");
 $footerBackground: map-get($theme-name, "color-1");
 $footerColor: map-get($theme-name, "color-3");
 $hrBorderTop: map-get($theme-name, "color-1");
-$navBackground: lighten(map-get($theme-name, "color-5"), 10%);
+$navBackground: map-get($theme-name, "color-5");
 $navColor: map-get($theme-name, "color-3" );
 $cardBackground: #ffffff;
 $border-shadow: map-get($theme-name, "color-5");

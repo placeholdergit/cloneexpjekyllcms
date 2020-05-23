@@ -67,7 +67,7 @@ $theme-8: (
   "color-2": #517ea6,  // Dark moderate blue-2
   "color-3": #c2e0f2,  // Light grayish blue-3
   "color-4": #d9aa71,  // Soft orange-4
-  "color-5": #401809,  // Very dark orange [Brown tone]-5
+  "color-5": lighten(#401809, 10%),  // Very dark orange [Brown tone]-5
 );
 
 /* Lapland-wilderness-panorama- */
