@@ -2,8 +2,24 @@
 @import "colors";
 $theme-name: $theme-8;
 
-// $backgroundColor: #ffffff;
+/**********
+ * COLORS *
+ **********/
+$bodyBackground: darken(map-get($theme-name, "color-3"), 5%);
 $bodyColor: #000000;
+$headerHeadingColor: map-get($theme-name, "color-1");
+$headingsColor: map-get($theme-name, "color-5");
+$linkColor: map-get($theme-name, "color-3");
+$footerBackground: map-get($theme-name, "color-1");
+$footerColor: map-get($theme-name, "color-3");
+$hrBorderTop: map-get($theme-name, "color-1");
+$navBackground: lighten(map-get($theme-name, "color-5"), 10%);
+$navColor: map-get($theme-name, "color-3" );
+$cardBackground: #ffffff;
+$border-shadow: map-get($theme-name, "color-5");
+$reverseBackground: map-get($theme-name, "color-1");
+$reverseColor: #ffffff;
+
 // $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 * {
@@ -13,15 +29,22 @@ body, html {
   font-size: 18px;
 }
 body {
-  background-color: darken(map-get($theme-name, "color-3"), 8%);
+  background-color: $bodyBackground;
   color: $bodyColor;
   // font-family: $bodyFont;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
+header > h1 {
+  // color: #4424D6;
+  color: $headerHeadingColor;
+  font-size: 4em;
+  font-weight: 700;
+  text-align: center;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
-  color: map-get($theme-name, "color-5");
+  color: $headingsColor;
 }
 a {
   text-decoration: none;
@@ -32,8 +55,8 @@ a:link, a:visited {
   color: inherit;
 }
 a:hover {
-  color: map-get($theme-name, "color-2"); // #4424D6;
-  border-bottom: solid 3px map-get($theme-name, "color-2"); // #4424D6;
+  color: $linkColor; // #4424D6;
+  border-bottom: solid 3px $linkColor; // #4424D6;
 }
 nav.reverse-colors a:hover {
   color: inherit;
@@ -63,18 +86,18 @@ div.card img {
   max-width: 90vw;
 }
 footer {
-  color: map-get($theme-name, "color-3");
-  background-color: map-get($theme-name, "color-1");
+  color: $footerColor;
+  background-color: $footerBackground;
 }
 hr {
-  color: map-get($theme-name, "color-5");
-  border-top: 4px solid map-get($theme-name, "color-1");
+  color: map-get($theme-name, "color-5"); // $bodyBackground;
+  border-top: 4px solid $hrBorderTop;
 }
 nav {
   font-size: 1.1em;
   // background-color: #B2D732;
-  color: map-get($theme-name, "color-3" );
-  background-color: lighten(map-get($theme-name, "color-5"), 10%); // #ffffff;
+  color: $navColor;
+  background-color: $navBackground; // #ffffff;
   padding: 0.5rem 0;
 }
 // ul {
@@ -108,8 +131,8 @@ nav {
 // Borrowed from w3.css .w3-card
 .card {
   // box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  box-shadow: 0 2px 8px 0 map-get($theme-name, "color-5");
-  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 $border-shadow;
+  background-color: $cardBackground;
   // rgba(57, 93, 115, 0.32);
   padding: 1em;
   margin: 0.5em;
@@ -156,13 +179,6 @@ nav {
 .header {
   grid-column: 1 / -1;
 }
-.header > h1 {
-  // color: #4424D6;
-  color: map-get($theme-name, "color-1");
-  font-size: 4em;
-  font-weight: 700;
-  text-align: center;
-}
 .main, .post-list {
   // background-color: #fff;
   grid-column: 1 / -1;
@@ -191,8 +207,8 @@ nav {
   align-items: flex-end;
 }
 .reverse-colors {
-  color: #ffffff;
-  background-color: map-get($theme-name, "color-1");
+  color: $reverseColor;
+  background-color: $reverseBackground;
 }
 .sticky-top {
   top: 0;
