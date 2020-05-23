@@ -2,9 +2,9 @@
 @import "colors";
 $theme-name: $theme-8;
 
-/**********
- * COLORS *
- **********/
+/***********
+*  COLORS  *
+************/
 $bodyBackground: darken(map-get($theme-name, "color-3"), 5%);
 $bodyColor: #000000;
 $headerHeadingColor: map-get($theme-name, "color-1");
