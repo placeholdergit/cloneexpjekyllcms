@@ -21,9 +21,7 @@
         {{ content }}
       </div>
       {% if page.title == 'Home' or page.title == 'Blog' %}
-        <div class="post-list">
-          {% include posts.html %}
-        </div>
+        {% include posts.html %}
       {% endif %}
       <footer class="footer flex-footer-container">
         <div>
