@@ -7,10 +7,11 @@
 <div class="post-list">
 {% for post in site.posts limit:x %}
   <a href="{{ post.url }}" class="card">
-    {{ post.excerpt }}
+    <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail | split:'/' | last }}" />
     <div>
       <h2>{{ post.title }}</h2>
       <p>{{ post.date | date_to_string }}</p>
+      {{ post.excerpt }}
       <p>
         {% for tag in post.tags %}
           <span class="tag">{{ tag }}</span>

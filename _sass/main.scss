@@ -129,12 +129,12 @@ nav {
 .card {
   background-color: $cardBackground;
   width: min-content;
-  margin: 0.5em;
+  margin: 0.5em 0;
   display: flex;
   flex-wrap: wrap;
-  > p {
-    margin: 0 0 -0.333em 0;
-  }
+  // > p {
+  //   margin: 0 0 -0.333em 0;
+  // }
 }
 @media (min-width: 1024px) {
   .card {
@@ -144,6 +144,7 @@ nav {
 .card > * {
   &:last-child {
     padding: 1em;
+    flex: 1 1 40%;
   }
 }
 .flex-nav-container, .flex-footer-container {
