@@ -25,6 +25,7 @@ collections:
           # searchFields: [display_name],
           # valueField: 'name',
         # }
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list'}
   # - name: 'authors'
