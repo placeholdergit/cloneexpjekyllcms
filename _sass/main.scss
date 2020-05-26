@@ -133,7 +133,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   > p {
-    margin: 0;
+    margin: 0 0 -0.333em 0;
   }
 }
 @media (min-width: 1024px) {
