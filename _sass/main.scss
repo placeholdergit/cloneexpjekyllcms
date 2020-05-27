@@ -82,9 +82,13 @@ a:hover.card {
 a:active {
   color: inherit;
 }
-article img {
+article > img {
   float: left;
   margin-right: 1em;
+}
+article p > img {
+  float: right;
+  margin-left: 1em;
 }
 footer {
   color: $footerColor;
