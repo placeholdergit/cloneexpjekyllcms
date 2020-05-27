@@ -125,7 +125,10 @@ nav {
   background-size: cover;
   background-image: url('../images/LakeBled.jpg');
 }
-// Borrowed from w3.css .w3-card
+.blog-post {
+  background-color: $bodyBackground !important;
+  align-items: flex-end;
+}
 .card {
   background-color: $cardBackground;
   width: min-content;
