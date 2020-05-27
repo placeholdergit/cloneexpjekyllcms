@@ -82,6 +82,10 @@ a:hover.card {
 a:active {
   color: inherit;
 }
+article img {
+  float: left;
+  margin-right: 1em;
+}
 footer {
   color: $footerColor;
   background-color: $footerBackground;
@@ -125,10 +129,12 @@ nav {
   background-size: cover;
   background-image: url('../images/LakeBled.jpg');
 }
-.blog-post {
-  background-color: $bodyBackground !important;
-  align-items: flex-end;
-}
+/* Not necessary if not using .card in blog post. */
+// .blog-post {
+//   background-color: $bodyBackground !important;
+//   align-items: flex-end;
+// }
+/* Only need > p negative margin if image used in body content & wrapped in <p></p> */
 .card {
   background-color: $cardBackground;
   width: min-content;
