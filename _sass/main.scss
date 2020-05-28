@@ -200,7 +200,8 @@ nav {
   column-gap: 1em;
   /* row-gap: 1em; */
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: [nav-start] 2.5em [header-start] auto [main-start] auto [post-list-start] minmax(20vh,auto) [footer-start] 5em [footer-end];
+  grid-template-rows: [nav-start] 2.5em [header-start] auto [main-start] auto 
+                        [post-list-start] minmax(15vh,auto) [footer-start] 5em [footer-end];
 }
 .header {
   grid-column: 1 / -1;
