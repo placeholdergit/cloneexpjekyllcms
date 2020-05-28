@@ -16,3 +16,9 @@ layout: default
 <article>
   <img src="{{ page.thumbnail }}" alt="{{ page.thumbnail | split:'/' | last }}" />{{ content }}
 </article>
+{% if page.previous.url %}
+  <a href="{{ page.previous.url }}" class="post-nav left">&larr;Previous</a>
+{% endif %}
+{% if page.next.url %}
+  <a href="{{ page.next.url }}" class="post-nav right">Next&rarr;</a>
+{% endif %}

@@ -133,11 +133,13 @@ nav {
   background-size: cover;
   background-image: url('../images/LakeBled.jpg');
 }
+
 /* Not necessary if not using .card in blog post. */
 // .blog-post {
 //   background-color: $bodyBackground !important;
 //   align-items: flex-end;
 // }
+
 /* Only need > p negative margin if image used in body content & wrapped in <p></p> */
 .card {
   background-color: $cardBackground;
@@ -227,6 +229,16 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
+}
+.post-nav {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }
 .reverse-colors {
   color: $reverseColor;
