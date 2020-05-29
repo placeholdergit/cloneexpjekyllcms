@@ -1,4 +1,8 @@
+{% if page.layout == 'post' or page.title == 'About' %} 
+<nav class="reverse-colors">
+{% else %}
 <nav>
+{% endif %}
   <div class="pad-sides flex-nav-container">
     {% for item in site.data.navigation.items %}
       <div>

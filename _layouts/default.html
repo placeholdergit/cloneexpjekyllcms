@@ -29,6 +29,7 @@
         </div>
       </footer>
     </div>
+    {% if page.layout != 'post' and page.title != 'About' %}
     <script>
       // Change style of navbar on scroll
       window.onscroll = function() {reverseNavColors()};
@@ -42,6 +43,7 @@
           }
       }
     </script>
+    {% endif %}
     {% if page.title == 'Home' %}
       <script>
         if (window.netlifyIdentity) {
