@@ -144,7 +144,7 @@ nav {
 .card {
   background-color: $cardBackground;
   width: min-content;
-  margin: 0.5em 0;
+  margin: 0.5em;
   display: flex;
   flex-wrap: wrap;
   // > p {
@@ -154,6 +154,7 @@ nav {
 @media (min-width: 1024px) {
   .card {
     width: 100%;
+    margin: 0.5em 0;
   }
 }
 .card > * {
