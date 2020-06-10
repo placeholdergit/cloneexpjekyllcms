@@ -76,6 +76,13 @@ article p > img {
   float: right;
   margin-left: 1em;
 }
+button {
+  color: $reverseColor;
+  background-color: $reverseBackground;
+  border: 1px solid $reverseBackground;
+  border-radius: 4px;
+  font-size: 1.1em;
+}
 footer {
   color: $footerColor;
   background-color: $footerBackground;
@@ -83,6 +90,11 @@ footer {
 hr {
   color: map-get($theme-name, "color-5"); // $bodyBackground;
   border-top: 4px solid $hrBorderTop;
+}
+input, textarea {
+  border: 1px solid $reverseBackground;
+  border-radius: 2px;
+  font-size: 1em;
 }
 nav {
   font-size: 1.1em;
