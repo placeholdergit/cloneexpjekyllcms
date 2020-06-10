@@ -1,6 +1,6 @@
 ---
 title: About
-layout: default
+layout: about
 ---
 ![Me](/assets/uploads/me_small.jpg)
 

@@ -14,48 +14,7 @@
       <div class="nav-bar sticky-top">
         {% include navigation.html %}
       </div>
-      {% if page.title == 'Home' or page.title == 'Blog' %}
-        {% include header.html %}
-      {% endif %}
-      <div class="main">
-        {{ content }}
-      </div>
-      {% if page.title == 'Home' or page.title == 'Blog' %}
-        {% include posts.html %}
-      {% endif %}
-      <footer class="footer flex-footer-container">
-        <div>
-          Built with Jekyll & NetlifyCMS
-        </div>
-      </footer>
+      {{ content }}
     </div>
-    {% if page.layout != 'post' and page.title != 'About' %}
-    <script>
-      // Change style of navbar on scroll
-      window.onscroll = function() {reverseNavColors()};
-      function reverseNavColors() {
-          var navbar = document.getElementsByTagName("nav")[0];
-          if (document.body.scrollTop > 54 || document.documentElement.scrollTop > 54) {
-              navbar.className = "reverse-colors" + " animate-opacity";
-          }
-          else {
-              navbar.className = navbar.className.replace("reverse-colors animate-opacity", "");
-          }
-      }
-    </script>
-    {% endif %}
-    {% if page.title == 'Home' %}
-      <script>
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on("init", user => {
-            if (!user) {
-              window.netlifyIdentity.on("login", () => {
-                document.location.href = "/admin/";
-              });
-            }
-          });
-        }
-      </script>
-    {% endif %}
   </body>
 </html>
