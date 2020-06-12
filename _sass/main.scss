@@ -131,6 +131,13 @@ nav {
   background-size: cover;
   background-image: url('../images/LakeBled.jpg');
 }
+// .bg-img-logo {
+//   height: 80px;
+//   width: 100px;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-image: url('../images/boot_logo_small.jpg');
+// }
 
 /* Not necessary if not using .card in blog post. */
 // .blog-post {
@@ -164,16 +171,18 @@ nav {
 .flex-nav-container, .flex-footer-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .flex-nav-container > * {
   flex: 0 1 6em;
+  text-align: center;
 }
-.flex-footer-container {
-  justify-content: center;
-}
-.flex-nav-container :last-child {
-  flex: 0 0 auto;
-}
+// .flex-footer-container {
+//   justify-content: center;
+// }
+// .flex-nav-container :last-child {
+//   flex: 0 0 auto;
+// }
 .fluid-type {
   font-size: 0.75rem;
 }
@@ -199,13 +208,20 @@ nav {
   column-gap: 1em;
   /* row-gap: 1em; */
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: [nav-start] 2.5em [header-start] auto [main-start] auto 
+  grid-template-rows: [logo-start] 7em [nav-start] 2.5em [header-start] auto [main-start] auto 
                         [post-list-start] minmax(15vh,auto) [footer-start] 5em [footer-end];
 }
 .header {
   grid-column: 1 / -1;
   grid-row-start: header-start;
   grid-row-end: main-start;
+}
+.logo-container {
+  grid-column: 1 / -1;
+  grid-row-start: logo-start;
+  grid-row-end: nav-start;
+  justify-self: center;
+  align-self: center;
 }
 .main, .post-list {
   // background-color: #fff;
