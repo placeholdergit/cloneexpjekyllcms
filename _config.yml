@@ -2,3 +2,18 @@ url: "https://wonderful-wescoff-35bc1d.netlify.app" # the base hostname & protoc
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "My Awesome Jekyll Blog" # the name of your site, e.g. ACME Corp.
 excerpt_separator: <!--more-->
+plugins:
+  - jekyll-archives
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - tags
+  layouts:
+    - tags: tags
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
