@@ -7,14 +7,14 @@ plugins:
 jekyll-archives:
   enabled:
     - year
-    - month
+    # - month
     - tags
-  # layouts:
-  #   - tags: tags
-  layout: tags
+  layouts:
+    tags: tags
+    year: year-archive
   permalinks:
     year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
+    # month: '/:year/:month/'
+    # day: '/:year/:month/:day/'
     tag: '/tag/:name/'
-    category: '/category/:name/'
+    # category: '/category/:name/'
