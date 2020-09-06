@@ -10,7 +10,7 @@ jekyll-archives:
     # - month
     - tags
   layouts:
-    tags: tags
+    tag: tags
     year: year-archive
   permalinks:
     year: '/:year/'
