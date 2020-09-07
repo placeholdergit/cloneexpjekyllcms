@@ -2,13 +2,12 @@
 layout: default
 ---
 <div class="main">
+  <!-- Posts tagged <span class="tag">{{ page.title }}</span> -->
   <h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
-  <ul class="">
+  <div class="flex-archive">
   {% for post in page.posts %}
-    <li>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
+    <div class="flex-arch-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+    <div class="flex-arch-post"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
   {% endfor %}
-  </ul>
+  </div>
 </div>

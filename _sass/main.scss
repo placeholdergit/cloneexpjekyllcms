@@ -177,6 +177,17 @@ nav {
     flex: 1 1 40%;
   }
 }
+.flex-archive {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+}
+.flex-arch-date {
+  flex: 0 1 15%;
+}
+.flex-arch-post {
+  flex: 1 1 85%;
+}
 .flex-nav-container { // .flex-footer-container {
   display: flex;
   flex-wrap: wrap;
