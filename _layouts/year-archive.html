@@ -7,6 +7,7 @@ layout: default
   {% for post in page.posts %}
     <div class="flex-arch-date">{{ post.date | date: "%b %-d, %Y" }}</div>
     <div class="flex-arch-post"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+    <div class="flex-arch-space"></div>
   {% endfor %}
   </div>
 </div>
