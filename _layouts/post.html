@@ -9,7 +9,7 @@ layout: default
     </p>
     <p>
     {% for tag in page.tags %}
-      <span class="tag">{{ tag }}</span>
+      <a href="/tag/{{ tag | downcase | split: ' ' | join: '-' }}" class="tag">{{ tag }}</a>
     {% endfor %}
     </p>
   </div>
