@@ -9,6 +9,7 @@ collections:
   - name: 'blog'
     label: 'Blog'
     folder: '_posts/'
+    path: '{{slug}}'
     create: true
     nested:
       depth: 30 # max depth to show in the collection tree
@@ -33,7 +34,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list'}
 
-    meta: { path: { widget: string, label: 'Path', index_file: '{{slug}}' } }
+    meta: { path: { widget: string, label: 'Path', index_file: index } }
     
   # - name: 'authors'
     # label: 'Authors'
