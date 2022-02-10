@@ -4,14 +4,19 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
+
 collections:
   - name: 'blog'
     label: 'Blog'
     folder: '_posts/'
     create: true
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
