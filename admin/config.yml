@@ -10,9 +10,9 @@ collections:
     label: 'Blog'
     folder: '_posts/'
     create: true
-    nested:
-      depth: 30 # max depth to show in the collection tree
-      summary: '{{title}}'
+    # nested:
+    #   depth: 30 # max depth to show in the collection tree
+    #   summary: '{{title}}'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
@@ -33,7 +33,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list'}
 
-    meta: { path: { widget: string, label: 'Path', index_file: index } }
+    # meta: { path: { widget: string, label: 'Path', index_file: index } }
     
   # - name: 'authors'
     # label: 'Authors'
