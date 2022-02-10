@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Our Bruh to Slovenia
+title: Our Bruh to Slovenias
 date: 2020-05-03T23:04:33.716Z
 thumbnail: /assets/uploads/brda_slovenia_small.jpg
 tags:
