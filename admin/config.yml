@@ -9,7 +9,6 @@ collections:
   - name: 'blog'
     label: 'Blog'
     folder: '_posts/'
-    path: '{{slug}}'
     create: true
     nested:
       depth: 30 # max depth to show in the collection tree
