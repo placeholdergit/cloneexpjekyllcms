@@ -33,6 +33,33 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list'}
 
+  - name: 'summ'
+    label: 'Summ'
+    folder: '_posts/summ/'
+    create: true
+    # nested:
+    #   depth: 30 # max depth to show in the collection tree
+    #   summary: '{{title}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      # - {
+          # label: 'Author',
+          # name: 'author',
+          # widget: 'relation',
+          # collection: 'authors',
+          # displayFields: [display_name],
+          # searchFields: [display_name],
+          # valueField: 'name',
+        # }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Tags', name: 'tags', widget: 'list'}
+
     # meta: { path: { widget: string, label: 'Path', index_file: index } }
     
   # - name: 'authors'
